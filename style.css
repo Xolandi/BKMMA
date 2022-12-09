@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+.colorWhite {
+    background-color: white;
+}
+
+.FeaturedDeal {
+    text-align: center;
+    padding: 1rem;
+    color: red
+
+}
+
+.colorRED {
+    color: red;
+    font-size: 3.2rem;
+}
+
+.backgroundGReen {
+    color: orangered;
+    font-weight: bold;
+}
+
+.texttobebold {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Schedule {
+    margin: 0 auto;
+}
+
+.item.clorWhity {
+    color: white;
+}
+
+.big {
+    border-top: 2px dotted; white;
+    font-size: 2.8rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.colorgrey {
+    color: grey;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+.makeitbig {
+    font-size: 2.5rem;
+    color: red;
+}
+
+/*.GymPic {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}*/
+
+.align_cneter {
+    text-align: center;
+    background-color: #c01638;
+    color: white;
+}
+
+body {
+    background-color: #0c0c0c;
+    font-family: open sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.item {
+    background-color: white;
+    line-height: 1.4;
+    color: #333;
+    border-radius: 0.5rem;
+}
+
+.item img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.description {
+    padding: 1rem 1.6rem 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+@media screen and (min-width: 540px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Styling for the navigation */
+
+.NavBar {
+/*    padding: 2rem;*/
+/*    text-align: center;*/
+    color: #333;
+    /* background-color: #DDD6FE; */
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.description {
+    background-color: #0c0c0c;
+}
+
+.menu {
+/*    background-color: rgb(0, 0, 0);*/
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+/* Nav Bar Styling */
+.menu a {
+    background-color: #eff6ff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu a.active {
+    background-color: green;
+    color: #fff;
+   
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read_more {
+   background-color: #ec3c3c;
+   padding: 8px;
+   border-radius: 5px;
+   color: white;
+}
+
+/* Styling for the reservation form */
+
+form {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: solid 1px #ddd;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+
+label {
+    display: block;
+/*    color: #eff6ff;*/
+    color: black;
+}
+
+input, textarea {
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    color: #333;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    padding: 0.75rem 2.25rem;
+    border-radius: 30px;
+    background-color: #ff5574;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+button {
+    grid-column: 1 / -1;
+}
+
+.message-block {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* STYLING FOR THE TABLES */
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.class {
+    background-color: #000;
+}
+
+tr:nth-child(even) {
+    background-color: #2e2828;
+    color: #fff;
+    font-size: large;
+}
+
+.details {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+/*  color: #f2f2f2;*/
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.formColor {
+    background-color: white;
+}
+
+
+
+
+/* Styling for the join form */
+
+form h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+input[type="submit"] {
+    font-size: 125%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0165b6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
